@@ -62,7 +62,7 @@ pre_mountroot()
 
 mountroot()
 {
-	pre_mountroot
+	# pre_mountroot
 
 	# Get the root filesystem type if not set
 	if [ -z "${ROOTFSTYPE}" ]; then
@@ -84,7 +84,7 @@ mountroot()
 	fi
 
 	# FIXME This has no error checking
-	[ -n "${FSTYPE}" ] && modprobe ${FSTYPE}
+	# [ -n "${FSTYPE}" ] && modprobe ${FSTYPE}
 
 	# FIXME This has no error checking
 	# Mount root
