@@ -2,7 +2,8 @@ The ramdisk image for radxa rock and other rockchip based platforms.
 
 ### How to generate the ramdisk ###
 
-    find . ! -path "./.git*"  | cpio -H newc  -ov > initrd.img
+    git clone https://github.com/radxa/initrd.git
+    make -C initrd
 
 ### Usage ###
 
